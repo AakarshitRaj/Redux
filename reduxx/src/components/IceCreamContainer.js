@@ -5,7 +5,7 @@ import {connect} from 'react-redux'
 function IceCreamContainer (props){
   return (
     <div>
-      <h2>Number of iceCream-{props.numOficeCreams}</h2>
+      <h2>Number of IceCream-{props.numOfIceCreams}</h2>
       <button onClick={props.buyIceCream}>Buy iceCream</button>
     </div>
   )
@@ -13,7 +13,7 @@ function IceCreamContainer (props){
 
 const mapStateToProps=state=>{
     return {
-        numOficeCreams:state.iceCream.numOficeCreams
+        numOfIceCreams:state.iceCream.numOfIceCreams
     }
 }
 const mapDispatchToProps=dispatch=>{
