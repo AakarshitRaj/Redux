@@ -4,7 +4,7 @@ import rootReducer from './rootReducer';
 // import iceCreamReducer from './icecream/icecreamReducer';
 import logger from 'redux-logger';
 
-const store=createStore(rootReducer)
+const store=createStore(rootReducer,applyMiddleware(logger))
 
 
 
