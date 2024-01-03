@@ -1,5 +1,6 @@
 import {createStore,applyMiddleware} from 'redux'
 import rootReducer from './rootReducer';
+import thunk from 'redux-thunk';
 // import cakeReducer from './cakes/cakeReducer'
 // import iceCreamReducer from './icecream/icecreamReducer';
 
@@ -9,7 +10,7 @@ import rootReducer from './rootReducer';
 
 import logger from 'redux-logger';
 
-const store=createStore(rootReducer,applyMiddleware(logger))
+const store=createStore(rootReducer,applyMiddleware(logger,thunk))
 
 
 
